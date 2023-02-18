@@ -1,12 +1,12 @@
 
 const Datetime = luxon.DateTime
-const fecha = Datetime.fromISO("2017-05-15") 
-
 let hora = document.getElementById("hora")
 
 
 setInterval(() => {
-    const fechahoy = Datetime.now()
-    let fecha2= fechahoy.toLocaleString(Datetime.TIME_24_WITH_SECONDS)
-    hora.innerHTML=`${fecha2}`
+    const fecha = Datetime.local() 
+    let fecha1= fecha.toLocaleString(Datetime.DATETIME_MED)
+    const horahoy = Datetime.now()
+    let hora1= horahoy.toLocaleString(Datetime.TIME_24_WITH_SECONDS)
+    hora.innerHTML=`${hora1}<div>${fecha1} </div> ` 
 }, 1000);
