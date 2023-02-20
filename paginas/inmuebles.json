@@ -1,5 +1,6 @@
 [
     {
+        "id": 1,
         "nombre": "casa230m",
         "ubicacion": "recoleta",
         "ambientes": 4,
@@ -9,6 +10,7 @@
         "descripcion": "Casa de 4 ambientes en uno de los mejores barrios de CABA."
     },
     {
+        "id": 2,
         "nombre": "smallterreno",
         "ubicacion": "neuquen",
         "ambientes": 0,
@@ -18,6 +20,7 @@
         "descripcion": "Terreno ubicado en Neuquén cerca del puerto con una vista increíble al río."
     },
     {
+        "id": 3,
         "nombre": "mansion200m",
         "ubicacion": "olivos",
         "ambientes": 6,
@@ -27,6 +30,7 @@
         "descripcion": "Exclusiva mansión en pleno corazón de CABA."
     },
     {
+        "id": 4,
         "nombre": "departamentoXX",
         "ubicacion": "merlo",
         "ambientes": 2,
@@ -36,6 +40,7 @@
         "descripcion": "Departamento de 2 ambientes en Buenos Aires."
     },
     {
+        "id": 5,
         "nombre": "casa215m",
         "ubicacion": "palermo",
         "ambientes": 3,
