@@ -1,5 +1,5 @@
 /*MODO OSCURO*/
-
+let modooscuro =localStorage.getItem("guardarmodo")
 let botondark2 = document.getElementById("dark1")
 let botonlight2 = document.getElementById("light")
 const dark2 = document.getElementById("modal2");
@@ -24,7 +24,7 @@ botonswitch.addEventListener("click", () => {
 });
 
 
-if (document.body.classList.contains("darkMode") === "on") {
+if (localStorage.getItem("darkMode") === "on") {
   document.body.classList.add("dark1");
 
 } else {
