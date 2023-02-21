@@ -4,7 +4,7 @@
         "nombre": "casa230m",
         "ubicacion": "recoleta",
         "ambientes": 4,
-        "precio": 210000,
+        "precio": "210.000",
         "propiedad": "casa",
         "foto": "casa230m.jpg",
         "descripcion": "Casa de 4 ambientes en uno de los mejores barrios de CABA."
@@ -14,7 +14,7 @@
         "nombre": "smallterreno",
         "ubicacion": "neuquen",
         "ambientes": 0,
-        "precio": 160000,
+        "precio": "160.000",
         "propiedad": "terreno",
         "foto": "smallterreno.jpg",
         "descripcion": "Terreno ubicado en Neuquén cerca del puerto con una vista increíble al río."
@@ -24,7 +24,7 @@
         "nombre": "mansion200m",
         "ubicacion": "olivos",
         "ambientes": 6,
-        "precio": 300000,
+        "precio": "300.000",
         "propiedad": "mansion200m.jpg",
         "foto": "casa230m.jpg",
         "descripcion": "Exclusiva mansión en pleno corazón de CABA."
@@ -34,7 +34,7 @@
         "nombre": "departamentoXX",
         "ubicacion": "merlo",
         "ambientes": 2,
-        "precio": 100000,
+        "precio": "100.000",
         "propiedad": "departamento",
         "foto": "departamentoXX.jpg",
         "descripcion": "Departamento de 2 ambientes en Buenos Aires."
@@ -44,7 +44,7 @@
         "nombre": "casa215m",
         "ubicacion": "palermo",
         "ambientes": 3,
-        "precio": 150000,
+        "precio": "150.000",
         "propiedad": "casa",
         "foto": "casa215m.jpg",
         "descripcion": "Casa de 3 ambientes amueblado en zona de Palermo."

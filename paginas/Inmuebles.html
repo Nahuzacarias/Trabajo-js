@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../css/bttn.min.css">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
@@ -15,99 +16,83 @@
 
 <body>
     <header>
-        <div class="d-flex justify-content-center align-items-end header">
-
-            <nav class="navbar navbar-expand-sm " aria-label="Third navbar example">
-                <div class="container-fluid">
-
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                    <div class="collapse navbar-collapse" id="navbarsExample03">
-
-                        <ul class="navbar-nav me-auto mb-2 mb-sm-0">
-                            <li class="nav-item header__uno">
-                                <a class="nav-link " aria-current="page" href="../index.html">Inicio</a>
-                            </li>
-                            <li class="nav-item header__uno">
-                                <a class="nav-link" href="/paginas/Inmuebles.html">Inmuebles a la Venta</a>
-                            </li>
-
-                            </li>
-                            <li class="nav-item ">
-                                <a class="nav-link" href="./contactanos.html">Contactanos</a>
-
-                            </li>
-                        </ul>
-                    </div>
+        <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+                <div>
+                    <a class="nav-link text-white" data-bs-toggle="modal" data-bs-target="#modal">
+                        <i class="bi bi-cart mx-5 carritostyle" style="font-size: 2rem;" id="carritoContenedor"></i>
+                    </a>
                 </div>
-            </nav>
-        </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Ventas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contactanos</a>
+                        </li>
+
+                        <div id="mostrartienda3">
+                            <button type="button" class="bttn-unite bttn-md bttn-primary ">Mostrar Tienda</button>
+                        </div>
+                
+                        <div id="ocultartienda3">
+                            <button type="button" class="bttn-unite bttn-md bttn-primary">Ocultar Tienda</button>
+                        </div>
+                    </ul>
+
+                </div>
+                <button class="switch" id="switch">
+                    <span class="switch_switch2"><i class="fa-regular fa-sun"></i></span>
+                    <span class="switch_switch2"><i class="fa-regular fa-moon"></i></span>
+                </button>
+            </div>
+
+            <div class="hora"id="hora">
+        
+            </div>
+            </div>
+            
+        </nav>
+
     </header>
+    <main>
 
-    <div>
-
-        <a class="nav-link text-white" data-bs-toggle="modal" data-bs-target="#modal">
-            <i class="bi bi-cart mx-5 btn-dark" id="carritoContenedor">0</i>
-        </a>
-    </div>
-
-    <div class="container-xl">
-        <div class="modal" tabindex="-1" role="dialog" id="modal">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
+    <div class="container-xl ">
+        <div class="modal " tabindex="-1" role="dialog" id="modal">
+            <div class="modal-dialog " role="document">
+                <div id= "modal2"class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title">Carrito</h5>
                         <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
-                    <div id="modal-body"class="modal-body">
+                    <div id="modal-body" class="modal-body">
 
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-danger" id="vaciarCarrito">
                             Vaciar carrito
                         </button>
-                        <button type="button" id="procesarCompra" class="btn btn-primary">
-                            Continuar compra
-                        </button>
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
                             Cerrar
                         </button>
 
-                        <span>Precio total:</span>
-                        <p class="text-center" id="precioTotal"></p>
+
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-<div id="hora">
-
-</div>
-
-
-
-
-    <button class="switch" id="switch">
-        <span class="switch_switch2"><i class="fa-regular fa-sun"></i></span>
-        <span class="switch_switch2"><i class="fa-regular fa-moon"></i></span>
-    </button>
-
-    <main class="bc">
-
-        <div id="mostrartienda3">
-            <button type="button" class="btn btn-outline-primary">Mostrar Tienda</button>
-        </div>
-
-        <div id="ocultartienda3">
-            <button type="button" class="btn btn-outline-primary">Ocultar Tienda</button>
-        </div>
 
         <div id="agregar" class="d-flex justify-content-center">
             <div id="carta" class="container row ">
@@ -121,7 +106,7 @@
     </footer>
 
     <script src="../js/bootstrap.bundle.min.js"> </script>
-    
+
     <script src="../js/index.js"> </script>
     <script src="https://kit.fontawesome.com/75e19fd0f4.js" crossorigin="anonymous"></script>
     <script src="../js/modonocturno.js"> </script>

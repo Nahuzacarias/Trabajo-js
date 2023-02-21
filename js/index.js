@@ -3,7 +3,7 @@ let mostrartienda = document.getElementById("mostrartienda3")
 let cartas = document.getElementById("carta");
 let ocultartienda = document.getElementById("ocultartienda3")
 ocultartienda.addEventListener("click", ocultartienda2)
-
+let vaciarCarrito= document.getElementById("vaciarCarrito")
 
 let carrito = []
 
@@ -59,7 +59,7 @@ function mostrarinmuebles() {
 <div class="card-body">
 <h5 class="card-title">${nombre}</h5>
     <p class="card-text">${descripcion}</p>
-    <p class="card-text">${precio}US$</p>
+    <p class="card-text">${precio} US$</p>
     <button id="comprar${id}"class="btn btn-primary">Agregar al carrito</button>
     
 </div>`;
@@ -76,18 +76,33 @@ function mostrarinmuebles() {
             <img class="img-fluid img-carrito" src="../assets/${foto}"/>
             </div>
             <div>
+            <p>ID :${id}</p>
             <p>Producto: ${nombre}</p>
             <p>Precio: ${precio}</p>
-            <p>Ambientes :${ambientes}</p>
-            <button class="btn btn-danger"  onclick="eliminarProducto(${id})">Eliminar producto</button>
+            
+            <button class="btn btn-danger"  id="eliminarProducto${id}">Eliminar producto</button>
             </div>
             </div>
             </div>`
 
             modal.appendChild(nuevocarro)
+
+            vaciarCarrito.addEventListener("click", ()=>{
+
+                nuevocarro.innerHTML =``
+            
+                const eliminarProducto = document.getElementById(`eliminarproducto${id}`)
+                eliminarProducto.addEventListener("click",()=>{
+
+                    carrito.splice("eliminarproducto${id}")
+
+                })
+            })
         })
     };
 }
+
+
 
 
 function agregarproducto(nombre) {
