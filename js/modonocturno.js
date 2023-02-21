@@ -1,8 +1,5 @@
 /*MODO OSCURO*/
 
-let modooscuro =localStorage.getItem("guardarmodo")
-
-
 let botondark2 = document.getElementById("dark1")
 let botonlight2 = document.getElementById("light")
 const dark2 = document.getElementById("modal2");
@@ -16,19 +13,21 @@ botonswitch.addEventListener("click", () => {
     botonswitch.classList.toggle("active");
     dark2.classList.toggle("dark2")
     
-    
-    if (document.body.classList.contains("dark1")) {
-		localStorage.setItem("guardarmodo", JSON.stringify("off"));
+    if(document.body.classList.contains("dark1")){
 
+      localStorage.setItem("darkMode","on")
+    } else{
 
+      localStorage.setItem("darkMode","off")
+    }
 
-
-    
-	} else {
-		localStorage.setItem("guardarmodo", JSON.stringify("on"));
-    document.body.classList.toggle.remove("dark1");
-	}
 });
 
 
+if (document.body.classList.contains("darkMode") === "on") {
+  document.body.classList.add("dark1");
 
+} else {
+  
+  document.body.classList.remove("dark1");
+}
