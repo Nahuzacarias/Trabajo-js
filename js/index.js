@@ -79,8 +79,6 @@ function mostrarinmuebles() {
             <p>ID :${id}</p>
             <p>Producto: ${nombre}</p>
             <p>Precio: ${precio}</p>
-            
-            <button class="btn btn-danger"  id="eliminarProducto${id}">Eliminar producto</button>
             </div>
             </div>
             </div>`
@@ -103,12 +101,6 @@ function mostrarinmuebles() {
 }
 
 
-
-
-function agregarproducto(nombre) {
-
-    console.log(nombre)
-}
 
 
 function ocultartienda2() {
