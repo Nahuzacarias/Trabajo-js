@@ -1,4 +1,3 @@
-
 let mostrartienda = document.getElementById("mostrartienda3")
 let cartas = document.getElementById("carta");
 let ocultartienda = document.getElementById("ocultartienda3")
@@ -39,10 +38,7 @@ const cargarinmuebles = async () => {
 }
 
 
-
 const propiedades = []
-
-
 
 
 function mostrarinmuebles() {
@@ -50,7 +46,7 @@ function mostrarinmuebles() {
 
     cartas.innerHTML = ``
     for (let inmueble of propiedades) {
-        const { id, nombre, ubicacion, ambientes, precio, propiedad, foto, descripcion } = inmueble
+        const { id, nombre, precio, foto, descripcion } = inmueble
         let nuevoinmueble = document.createElement("div")
         nuevoinmueble.classList.add("col-12", "col-md-6", "col-lg-4", "my-3")
 
